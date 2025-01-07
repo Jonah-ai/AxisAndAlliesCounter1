@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis and Allies counter</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;400&display=swap" rel="stylesheet">   
+</head>
+<body>
+<div class="container">
+    <!-- //Current income -->
+    <section>
+            <div class="currentIncome">
+                <h1>Current Income:</h1>
+            </div>
+                <div class="amountHolder">
+            <div class="amount" contenteditable="true">0</div>
+        </div>
+    </section>
+    
+    <!-- //Purchasing Units consisting of plus and minus buttons and list items -->
+    <section>
+        <div class="landUnits">
+            <h2>
+                Purchasing Units 
+            </h2>
+            <div>
+                <div>
+                    <h3>
+                        Land Units:
+                    </h3>
+                </div>
+                <div>
+                    <li>
+                        Infantry: cost 3 ipc.
+                    </li>
+                    <div><button class="plus" id="infantry-plus">+</button> <button class="minus" id="infantry-minus">-</button></div>
+                </div>
+                <div>
+                    <li>
+                        Artillery: cost 4 ipc.
+                    </li>
+                    <div><button class="plus">+</button> <button class="minus">-</button></div>
+                </div>
+                <div>
+                    <li>
+                        Tank: cost 5 ipc.
+                    </li>
+                    <div><button class="plus">+</button> <button class="minus">-</button></div>
+                </div>
+                <div>
+                    <li>
+                        AA: cost 6 ipc.
+                    </li>
+                    <div><button class="plus">+</button> <button class="minus">-</button></div>
+                </div>
+                <div>
+                    <li>
+                        Industrial complex: cost 15 ipc.
+                    </li>
+                    <div><button class="plus">+</button> <button class="minus">-</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="airUnits">
+            <div>
+                <h3>
+                    Air Units:
+                </h3>
+            </div>
+            <div>
+                <li>
+                    Fighter: cost 10 ipc.
+                </li>
+                <div><button class="plus">+</button> <button class="minus">-</button></div>
+            </div>
+            <div>
+                <li>
+                    Bomber: cost 12 ipc.
+                </li>
+                <div><button class="plus">+</button> <button class="minus">-</button></div>
+            </div>
+        </div>
+        <div class="seaUnits">
+            <div>
+                <h3>
+                    Sea Units:
+                </h3>
+            </div>
+            <div>
+                <li>
+                    Sub: cost 6 ipc.
+                </li>
+                <div><button class="plus">+</button> <button class="minus">-</button></div>
+            </div>
+            <div>
+                <li>
+                    Transport: cost 7 ipc.
+                </li>
+                <div><button class="plus">+</button> <button class="minus">-</button></div>
+            </div>
+            <div>
+                <li>
+                    Destroyer: cost 8 ipc.
+                </li>
+                <div><button class="plus">+</button> <button class="minus">-</button></div>
+            </div>
+            <div>
+                <li>
+                    Cruiser: cost 12 ipc.
+                </li>
+                <div><button class="plus">+</button> <button class="minus">-</button></div>
+            </div>
+            <div>
+                <li>
+                    Aircraft Carrier: cost 14 ipc.
+                </li>
+                <div><button class="plus">+</button> <button class="minus">-</button></div>
+            </div>
+            <div>
+                <li>
+                    Battleship: cost 20 ipc.
+                </li>
+                <div><button class="plus">+</button> <button class="minus">-</button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- //Income collected tab  -->
+    <section class="">
+        <div class="incomeCollected">
+            <h3>Income to be collected at end of turn:</h3>
+            <div class="ipcForm">
+                <form action="#">
+                    <input type="text" id="userInput" name="userInput" placeholder="IPC end of turn value..." required>
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- //Units purchased -->
+    <section class=""></section>
+    <div class="unitsPurchased">
+        <h3>Units Purchased:</h3>
+        <div id="totalUnitsPurchased">
+            <li id="infantryUnit" class="totslUnitsPurchased">Infantry:</li>
+            <li id="artilleryUnit" class="totslUnitsPurchased">Artillery:</li>
+            <li id="tankUnit" class="totslUnitsPurchased">Tank:</li>
+            <li id="AAUnit" class="totslUnitsPurchased">AA:</li>
+            <li id="ICUnit" class="totslUnitsPurchased">Industrial complex:</li>
+            <li id="fighterUnit" class="totslUnitsPurchased">Fighter:</li>
+            <li id="bomberUnit" class="totslUnitsPurchased">Bomber:</li>
+            <li id="subUnit" class="totsUnitsPurchased">Sub:</li>
+            <li id="transportUnit" class="totslUnitsPurchased">Transport:</li>
+            <li id="destroyerUnit" class="totslUnitsPurchased">Destroyer:</li>
+            <li id="cruiserUnit" class="totslUnitsPurchased">Cruiser:</li>
+            <li id="aircraftCarrierUnit" class="totslUnitsPurchased">Aircraft Carrier:</li>
+            <li id="battleshipUnit" class="totslUnitsPurchased">Battleship:</li>
+        </div>
+    </div>
+    
+    <!-- //Next round button  -->
+    <section class="">
+        <div class="nextRound">
+            <div class="nextRoundContainer">
+                <h3>Next Round reset:</h3>
+                <div><button class="nextRoundButton">Next Round</button>
+            </div>
+        </div>
+    </section>
+</div>
+    <script src="./index.js"></script>
+</body>
+</html>

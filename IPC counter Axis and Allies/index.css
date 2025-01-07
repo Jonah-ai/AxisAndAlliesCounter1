@@ -1,0 +1,99 @@
+body {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(to bottom, #f3c018, #feb47b);
+}
+button{
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    border-radius: 5px;
+}
+h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+
+/* Current Income Section */
+.currentIncome {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.amountHolder{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 60px;
+    border: 2px solid black;
+}
+
+/* Purchasing Units Section */
+.landUnits{
+    margin-left: 180px;
+    padding-bottom: 30px;
+}
+.airUnits{
+    margin-left: 180px;
+    padding-bottom: 30px;
+}
+.seaUnits{
+    margin-left: 180px;
+    padding-bottom: 30px;
+}
+.plus{
+    background-color: green;
+}
+.minus{
+    background-color:crimson;
+}
+/* Income Collected */
+.incomeCollected{
+    position: absolute;
+    top:300px;
+    right: 180px;
+    top: 550px;
+    right:180px;
+}
+.submit{
+    width: fit-content;
+    background-color: green;
+}
+.ipcForm{
+    display: flex;
+    justify-content: flex-end;
+
+}
+/* next round button */
+.nextRound{
+    position: absolute;
+    top: 340px;
+    right:180px;
+    top: 750px;
+    right:180px;
+}
+.nextRoundContainer{
+    text-align:center;
+}
+.nextRoundButton{
+    width: 150px;
+    height: 50px;
+    background-color: crimson;
+}
+
+/* Units Purchased section */
+.unitsPurchased{
+    position: absolute;
+    top:183px;
+    right: 180px;
+}
