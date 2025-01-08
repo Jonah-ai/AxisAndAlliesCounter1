@@ -8,8 +8,9 @@ html, body {
 
 /* Background Image */
 body {
-    background-image: url(./images.css/AAO_HomePage_Splash_2.height-550.jpg);
-    background-repeat: no-repeat;
+    background-color: #ce0f0f;
+    /* background-image: url(./images.css/AAO_HomePage_Splash_2.height-550.jpg);
+    background-repeat: no-repeat; */
     background-position: center center;
     background-size: cover; /* Ensure the image covers the full screen without stretching */
     background-attachment: fixed; /* Fixed background to maintain effect on scroll */
@@ -190,7 +191,14 @@ button:hover {
 }
 
 /* Media Query for Responsiveness */
-@media (max-width: 768px) {
+@media all and (max-width: 500px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ff0000;
+    }
     /* Reduce font size for currentIncome and adjust padding */
     .currentIncome {
         font-size: 0.7rem; /* Further reduce font size for mobile */
