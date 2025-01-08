@@ -191,13 +191,16 @@ button:hover {
 }
 
 /* Media Query for Responsiveness */
-@media all and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
     body {
+        background-color: #ff0000;
+    }
+    .container {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #ff0000;
+        min-height: 100vh;
     }
     /* Reduce font size for currentIncome and adjust padding */
     .currentIncome {
